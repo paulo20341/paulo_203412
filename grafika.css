@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+.left-column {
+    width: 15%;
+    background-color: #9c9c9c;
+    color: #fff;
+    padding: 20px;
+}
+
+.right-column {
+    flex: 3;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.black-background {
+    background-color: #000;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.menu {
+    padding-left: 0;
+}
+
+.menu li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.archive-list,
+.category-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.archive-list li,
+.category-list li {
+    margin-bottom: 10px;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.team-img {
+    max-width: 100%; /* Define a largura máxima das imagens */
+    height: auto;
+}
+.third-column {
+    width: 20%;
+    background-color: #ffffff; /* Cor de fundo da terceira coluna */
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Incluir preenchimento no tamanho total */
+}
+
+.chart {
+    width: 200px;
+    height: 30px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #007bff; /* Cor azul para representar o progresso */
+    border-radius: 5px;
+  }
+  
