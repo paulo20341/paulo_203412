@@ -1,0 +1,106 @@
+/* Reset de margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo básico para o body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para a div pai */
+.pai {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Estilo para as divs filho */
+.filho1, .filho2, .filho3, .filho4 {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Estilo para o lado esquerdo (filho1) */
+.filho1 {
+    background-color: black;
+    color: yellow;
+}
+
+/* Estilo para o lado direito (filho2, filho3, filho4) */
+.filho2, .filho3, .filho4 {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+/* Estilo para o título 'GRAFIKA' */
+.grafika {
+    font-size: 32px;
+}
+
+/* Estilo para o subtítulo 'minimal blog design' */
+.min {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Estilo para o texto 'Lorem ipsum dolor sit play black amet consectetur adipisicing elit. Distinctio, sapiente.' */
+.text {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+.yellow-section {
+    background-color: yellow;
+    color: black;
+    padding: 20px;
+}
+
+/* Estilo para as opções de menu */
+.opc {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.opc li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilo para as listas brancas */
+.branco1, .branco2, .branco3 {
+    list-style: none;
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+.branco1 li, .branco2 li, .branco3 li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Estilo para os hr */
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Estilo para os ícones */
+.icones {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Estilo para o rodapé */
+.reserv {
+    font-size: 14px;
+    color: #888;
+    margin-top: 20px;
+}

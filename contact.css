@@ -11,80 +11,140 @@ body {
 
 .left-column {
     width: 15%;
-    background-color: #000; /* Cor preta para a coluna esquerda */
-    color: #fff; /* Cor do texto branco */
-    padding: 20px; /* Espaçamento interno */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.black-section {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    padding-left: 40%;
+}
+
+.yellow-section {
+    background-color: yellow;
+    color: black;
+    padding: 20px;
+}
+
+.white-section {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    flex-grow: 1;
 }
 
 .right-column {
     width: 75%;
-    background-color: #f0f0f0; /* Cor cinza para a coluna direita */
-    padding: 20px; /* Espaçamento interno */
+    background-color: #f0f0f0;
+    padding: 20px;
 }
 
-.separator {
-    width: 10px;
-    background-color: yellow; /* Cor amarela para o separador */
-}
+
 
 ul {
-    border: 2px solid yellow; /* Adiciona uma borda amarela */
-    padding: 10px; /* Espaçamento interno */
-}
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 09px;
+    list-style-type: none;
+    padding: 0;
+    
+    padding: 10px;
+    position: relative;
 }
 
-.gallery img {
-    width: 40%;
-    height: auto;
+ul li {
+    margin: 5px 0;
+    padding-left: 70%;
+    position: relative;
 }
+
+ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul li.active::after {
+    content: '→';
+    position: absolute;
+    right: 10px;
+    color: black;
+}
+
+.white-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 form {
+    display: flex;
+    justify-content: space-between;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px; /* Defina a largura máxima do formulário */
-    margin: 0 auto; /* Centraliza o formulário na página */
 }
 
-label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
+.form-left, .form-right {
+    width: 48%;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: calc(100% - 22px); /* Calcula a largura dos campos de entrada */
-    padding: 10px;
+.form-group {
+    display: flex;
+    align-items: center;
     margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    width: 100px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    flex-grow: 1;
+    padding: 10px;
+    margin-left: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
     font-size: 16px;
 }
 
+.form-group img {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+}
+
 input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
+    background-color: yellow; /* Mudei a cor do botão para amarelo */
+    color: black; /* Mudei a cor do texto para preto */
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: 100%; /* Botão de envio com largura 100% */
+    width: 100%;
     font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #e6b800; /* Cor amarela escura para o hover */
 }
 
 ::placeholder {
     color: #999;
+}
+ul.archive-list, ul.category-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.divider {
+    border-bottom: 1px solid black;
+    margin: 20px 0;
 }
